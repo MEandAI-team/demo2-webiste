@@ -13,7 +13,7 @@ export function Navigation() {
   
   return (
     <motion.header 
-      className="fixed top-0 left-0 right-0 z-50 px-4 sm:px-6 py-4 sm:py-6 flex justify-between items-center bg-white/90 backdrop-blur-sm border-b border-gray-100"
+      className="fixed top-0 left-0 right-0 z-50 px-6 py-6 flex justify-between items-center bg-white/90 backdrop-blur-sm border-b border-gray-100"
       initial={{ opacity: 0, y: -20 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.6 }}
@@ -27,7 +27,7 @@ export function Navigation() {
         </Link>
       </motion.div>
       
-      <nav className="flex gap-4 sm:gap-8">
+      <nav className="flex gap-8">
         {navItems.map((item, index) => (
           <motion.div
             key={item.path}
@@ -37,7 +37,7 @@ export function Navigation() {
           >
             <Link
               to={item.path}
-              className={`text-xs sm:text-sm tracking-wider transition-all duration-300 hover:opacity-70 relative ${
+              className={`text-sm tracking-wider transition-all duration-300 hover:opacity-70 relative ${
                 location.pathname === item.path || 
                 (item.path === '/portfolio' && location.pathname.startsWith('/portfolio/')) 
                 ? 'opacity-100' : 'opacity-80'
