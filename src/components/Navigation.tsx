@@ -23,7 +23,7 @@ export function Navigation() {
         transition={{ duration: 0.2 }}
       >
         <Link to="/" className="text-lg tracking-wide font-['Rye',serif]">
-          MadKing Photography
+          Photography
         </Link>
       </motion.div>
       
