@@ -3,8 +3,8 @@ import { Link } from 'react-router-dom';
 
 export function AboutPage() {
   return (
-    <div className="px-16 py-20 max-w-6xl mx-auto">
-      <div className="grid grid-cols-2 gap-20 items-center min-h-[60vh]">
+    <div className="px-6 sm:px-10 md:px-16 py-12 md:py-20 max-w-6xl mx-auto">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-20 items-center min-h-[60vh]">
         {/* Left - Image Section */}
         <motion.div 
           className="relative"
@@ -40,7 +40,7 @@ export function AboutPage() {
           </motion.p>
           
           <motion.h1 
-            className="text-5xl leading-tight mb-8 tracking-wide font-['Rye',serif]"
+            className="text-4xl md:text-5xl leading-tight mb-6 md:mb-8 tracking-wide font-['Rye',serif]"
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.5 }}

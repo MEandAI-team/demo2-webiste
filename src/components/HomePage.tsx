@@ -16,9 +16,9 @@ export function HomePage() {
     setCurrentImageIndex((prev) => (prev + 1) % heroImages.length);
   };
   return (
-    <div className="flex min-h-[calc(100vh-200px)]">
+    <div className="flex flex-col-reverse md:flex-row min-h-[calc(100vh-200px)]">
       {/* Left Content Section */}
-      <div className="w-1/2 px-16 py-20 flex flex-col justify-center">
+      <div className="w-full md:w-1/2 px-6 sm:px-10 md:px-16 py-10 md:py-20 flex flex-col justify-center">
         <motion.div 
           className="max-w-lg"
           initial={{ opacity: 0, x: -50 }}
@@ -35,7 +35,7 @@ export function HomePage() {
           </motion.p>
           
           <motion.h1 
-            className="text-6xl leading-tight mb-8 tracking-wide font-['Rye',serif]"
+            className="text-4xl sm:text-5xl md:text-6xl leading-tight mb-6 md:mb-8 tracking-wide font-['Rye',serif]"
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.3 }}
@@ -63,7 +63,7 @@ export function HomePage() {
           >
             <Link to="/portfolio">
               <motion.button 
-                className="px-8 py-3 border border-black text-sm tracking-widest hover:bg-black hover:text-white transition-colors"
+                className="px-6 sm:px-8 py-3 border border-black text-xs sm:text-sm tracking-widest hover:bg-black hover:text-white transition-colors"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
               >
@@ -76,7 +76,7 @@ export function HomePage() {
       
       {/* Right Image Section */}
       <motion.div 
-        className="w-1/2 relative"
+        className="w-full md:w-1/2 relative h-80 sm:h-[28rem] md:h-auto"
         initial={{ opacity: 0, scale: 1.1 }}
         animate={{ opacity: 1, scale: 1 }}
         transition={{ duration: 1, ease: "easeOut" }}

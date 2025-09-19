@@ -2,7 +2,7 @@ import { motion } from 'motion/react';
 
 export function ContactPage() {
   return (
-    <div className="px-16 py-20">
+    <div className="px-6 sm:px-10 md:px-16 py-12 md:py-20">
       <div className="max-w-4xl mx-auto">
         <motion.div 
           className="text-center mb-16"
@@ -11,7 +11,7 @@ export function ContactPage() {
           transition={{ duration: 0.8 }}
         >
           <motion.h1 
-            className="text-5xl tracking-wider mb-8 font-['Rye',serif]"
+            className="text-4xl md:text-5xl tracking-wider mb-6 md:mb-8 font-['Rye',serif]"
             initial={{ opacity: 0, scale: 0.9 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.8, delay: 0.2 }}
@@ -29,7 +29,7 @@ export function ContactPage() {
           </motion.p>
         </motion.div>
         
-        <div className="grid grid-cols-2 gap-16">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 md:gap-16">
           {/* Left - Contact Form */}
           <motion.div
             initial={{ opacity: 0, x: -30 }}
@@ -50,7 +50,7 @@ export function ContactPage() {
               animate={{ opacity: 1 }}
               transition={{ duration: 0.8, delay: 1.0 }}
             >
-              <div className="grid grid-cols-2 gap-4">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 <motion.div
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
@@ -130,7 +130,7 @@ export function ContactPage() {
               
               <motion.button 
                 type="submit"
-                className="px-8 py-3 bg-black text-white text-sm tracking-widest hover:bg-gray-800 transition-colors"
+                className="px-6 sm:px-8 py-3 bg-black text-white text-xs sm:text-sm tracking-widest hover:bg-gray-800 transition-colors"
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: 1.7 }}

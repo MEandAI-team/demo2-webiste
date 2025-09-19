@@ -64,19 +64,19 @@ export function PortfolioPage() {
   };
 
   return (
-    <div className="px-16 py-20">
+    <div className="px-6 sm:px-10 md:px-16 py-12 md:py-20">
       <motion.div 
-        className="text-center mb-20"
+        className="text-center mb-12 md:mb-20"
         initial={{ opacity: 0, y: -20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8 }}
       >
-        <h1 className="text-6xl tracking-widest mb-8 font-['Rye',serif]">PORTFOLIO</h1>
+        <h1 className="text-4xl md:text-6xl tracking-widest mb-6 md:mb-8 font-['Rye',serif]">PORTFOLIO</h1>
       </motion.div>
       
       {/* Portfolio Grid - 3x2 */}
       <motion.div 
-        className="grid grid-cols-3 gap-8 max-w-7xl mx-auto"
+        className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 max-w-7xl mx-auto"
         variants={containerVariants}
         initial="hidden"
         animate="visible"
