@@ -93,7 +93,7 @@ export function GalleryPage() {
   };
 
   return (
-    <div className="px-16 py-20">
+    <div className="px-4 sm:px-6 lg:px-16 py-12 sm:py-16 lg:py-20">
       {/* Back Button */}
       <motion.div
         initial={{ opacity: 0, x: -20 }}
@@ -115,9 +115,9 @@ export function GalleryPage() {
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8 }}
-        className="text-center mb-20"
+        className="text-center mb-12 sm:mb-16 lg:mb-20"
       >
-        <h1 className="text-6xl tracking-widest mb-8 font-['Rye',serif]">{currentGallery.title}</h1>
+        <h1 className="text-4xl sm:text-5xl lg:text-6xl tracking-widest mb-6 sm:mb-8 font-['Rye',serif]">{currentGallery.title}</h1>
         <div className="max-w-4xl mx-auto">
           <p className="text-base leading-relaxed text-gray-700">
             {currentGallery.description}

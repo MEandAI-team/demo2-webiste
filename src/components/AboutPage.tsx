@@ -3,8 +3,8 @@ import { Link } from 'react-router-dom';
 
 export function AboutPage() {
   return (
-    <div className="px-16 py-20 max-w-6xl mx-auto">
-      <div className="grid grid-cols-2 gap-20 items-center min-h-[60vh]">
+    <div className="px-4 sm:px-6 lg:px-16 py-12 sm:py-16 lg:py-20 max-w-6xl mx-auto">
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-20 items-center min-h-[60vh]">
         {/* Left - Image Section */}
         <motion.div 
           className="relative"
